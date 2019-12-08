@@ -1,0 +1,13 @@
+ul {
+    list-style-type: none;
+    padding-inline-start: 17px;
+  }
+  li{
+      cursor: pointer;
+  }
+  #searchText{
+      margin-left: 3px;
+  }
+  .container{
+    margin-top: 20px;
+  }

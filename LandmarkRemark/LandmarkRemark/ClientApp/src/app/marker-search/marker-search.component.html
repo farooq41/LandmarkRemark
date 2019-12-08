@@ -1,0 +1,27 @@
+<div class="container" style="margin-top: 20px;">
+  <div class="row">
+      <div class="col-sm-8 form-group">
+    <input [(ngModel)]="searchText" placeholder="Search by username or note" type="search" class="form-control" id="searchText">
+    </div> 
+  </div> 
+    <div class="row">
+    <ul>
+      <li *ngFor="let marker of markers | filter : searchText" (click)="selectMarker(marker)">
+          <div *ngIf="marker.user.username == user.username" class="panel panel-primary">
+          <div class="panel-heading">My Note - {{marker.createdDate | date}}</div>
+          <div class="panel-body">
+            {{marker.note}}
+          </div>
+        </div>
+        <div *ngIf="marker.user.username !== user.username" class="panel panel-default">
+              <div class="panel-heading">Note by {{marker.user.username}} - {{marker.createdDate | date}}</div>
+              <div class="panel-body">
+                {{marker.note}}
+              </div>
+            </div>
+      </li>
+    </ul>
+ 
+  </div>
+</div>
+

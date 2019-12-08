@@ -1,0 +1,61 @@
+<agm-map [latitude]="lat" [longitude]="lng" gestureHandling="greedy" [zoom]="14">
+  <agm-marker [latitude]="homeLat" [longitude]="homeLng"
+    [iconUrl]="{'url': 'assets/currentloc.jpg', 'scaledSize': {'height': 40, 'width': 40}}"  [zIndex]="currentMarkerExists ? 10 : 1000">
+    <agm-info-window *ngIf="!currentMarkerExists">
+        <form #g="ngForm">
+          <div class="row">
+            <div class="col-sm-12 form-group">
+  
+                <label for="note">Add a Note</label>
+        
+                <input type="text" id="note" name="note" class="form-control" [(ngModel)]="currentMarker.note" required />
+          
+              </div>
+            </div>
+              <div class="row">
+  
+                  <div class="col-sm-6">
+              
+                    <button class="btn btn-success col-sm-12" type="submit" (click)="addNote()" [disabled]="!g.valid">Save</button>               
+              
+                  </div>
+              
+                </div>
+        </form>
+      <p>Your Current Location:</p>
+      <p>Longitude: {{lng}}</p>
+      <p>Latitude: {{lat}}</p>
+    </agm-info-window>
+  </agm-marker>
+
+<ng-container *ngFor="let marker of markers">
+
+    <agm-marker *ngIf="marker.user.username == user.username" [latitude]="marker.latitude" [longitude]="marker.longitude"
+      [iconUrl]="{'url': 'assets/landmark.png', 'scaledSize': {'height': 40, 'width': 40}}" [zIndex]="marker.current ? 200 : 1"
+      (markerClick)="marker.open ? marker.open = false : openMarker(marker)">
+      <agm-info-window [isOpen]="marker.open" (infoWindowClose)="marker.open = false">
+        <p>My Note</p>
+        <Span *ngIf="!marker.current" class="d-block"><b>Note:</b></Span>
+        <br/>
+        <Span *ngIf="marker.current" class="d-block"><b>Note at your current Location:</b></Span>
+        <p>{{marker.note}}</p>
+        <span>Created On: {{marker.createdDate | date}}</span>
+      </agm-info-window>
+    </agm-marker>
+
+    <agm-marker *ngIf="marker.user.username !== user.username" [latitude]="marker.latitude" [longitude]="marker.longitude"
+      [iconUrl]="{'url': 'assets/otherlandmark.png', 'scaledSize': {'height': 40, 'width': 40}}" 
+      (markerClick)="marker.open ? marker.open = false : openMarker(marker)">
+      <agm-info-window [isOpen]="marker.open" (infoWindowClose)="marker.open = false">
+        <span>Username:</span>
+        <p>{{marker.user.username}}</p>
+        <Span class="d-block"><b>Note:</b></Span>
+        <p>{{marker.note}}</p>
+        <span>Created On: {{marker.createdDate | date}}</span>
+      </agm-info-window>
+    </agm-marker>
+  </ng-container>
+
+  <app-map (loadMap)='loadMap($event)'></app-map>
+</agm-map>
+<app-marker-search [markers]="markers" (selectedMarker)="onChoseSearchedMarker($event)"></app-marker-search>
