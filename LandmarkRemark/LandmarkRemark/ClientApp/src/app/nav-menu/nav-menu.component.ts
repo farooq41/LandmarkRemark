@@ -15,7 +15,7 @@ export class NavMenuComponent {
   }
 
   showLogout(){
-    return this.userService.getUser();
+    return this.userService.getUser() || localStorage.getItem('user');
   }
 
   toggle() {
