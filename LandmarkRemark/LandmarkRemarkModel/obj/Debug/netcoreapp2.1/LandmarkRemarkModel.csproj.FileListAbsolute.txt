@@ -7,3 +7,11 @@ C:\Code\LandmarkRemark\LandmarkRemarkModel\obj\Debug\netcoreapp2.1\LandmarkRemar
 C:\Code\LandmarkRemark\LandmarkRemarkModel\obj\Debug\netcoreapp2.1\LandmarkRemarkModel.dll
 C:\Code\LandmarkRemark\LandmarkRemarkModel\obj\Debug\netcoreapp2.1\LandmarkRemarkModel.pdb
 C:\Code\LandmarkRemark\LandmarkRemarkModel\obj\Debug\netcoreapp2.1\LandmarkRemarkModel.csprojAssemblyReference.cache
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkModel\bin\Debug\netcoreapp2.1\LandmarkRemarkModel.deps.json
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkModel\bin\Debug\netcoreapp2.1\LandmarkRemarkModel.dll
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkModel\bin\Debug\netcoreapp2.1\LandmarkRemarkModel.pdb
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkModel\obj\Debug\netcoreapp2.1\LandmarkRemarkModel.csprojAssemblyReference.cache
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkModel\obj\Debug\netcoreapp2.1\LandmarkRemarkModel.AssemblyInfoInputs.cache
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkModel\obj\Debug\netcoreapp2.1\LandmarkRemarkModel.AssemblyInfo.cs
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkModel\obj\Debug\netcoreapp2.1\LandmarkRemarkModel.dll
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkModel\obj\Debug\netcoreapp2.1\LandmarkRemarkModel.pdb

@@ -16,3 +16,16 @@ C:\Code\LandmarkRemark\LandmarkRemarkService\bin\Debug\netcoreapp2.1\Microsoft.I
 C:\Code\LandmarkRemark\LandmarkRemarkService\bin\Debug\netcoreapp2.1\System.IdentityModel.Tokens.Jwt.dll
 C:\Code\LandmarkRemark\LandmarkRemarkService\bin\Debug\netcoreapp2.1\Microsoft.IdentityModel.Tokens.xml
 C:\Code\LandmarkRemark\LandmarkRemarkService\bin\Debug\netcoreapp2.1\System.IdentityModel.Tokens.Jwt.xml
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\obj\Debug\netcoreapp2.1\LandmarkRemarkService.csprojAssemblyReference.cache
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\obj\Debug\netcoreapp2.1\LandmarkRemarkService.AssemblyInfoInputs.cache
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\obj\Debug\netcoreapp2.1\LandmarkRemarkService.AssemblyInfo.cs
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\obj\Debug\netcoreapp2.1\LandmarkRemarkService.dll
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\obj\Debug\netcoreapp2.1\LandmarkRemarkService.pdb
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\bin\Debug\netcoreapp2.1\LandmarkRemarkService.deps.json
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\bin\Debug\netcoreapp2.1\LandmarkRemarkService.dll
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\bin\Debug\netcoreapp2.1\LandmarkRemarkService.pdb
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\bin\Debug\netcoreapp2.1\LandmarkRemarkData.dll
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\bin\Debug\netcoreapp2.1\LandmarkRemarkModel.dll
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\bin\Debug\netcoreapp2.1\LandmarkRemarkData.pdb
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\bin\Debug\netcoreapp2.1\LandmarkRemarkModel.pdb
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\obj\Debug\netcoreapp2.1\LandmarkRemarkService.csproj.CopyComplete

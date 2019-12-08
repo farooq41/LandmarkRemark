@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "6eebc2a7de2d27fef1d05e725268c2ce020c9eea"
+    "signature": ""
   },
   "compilationOptions": {},
   "targets": {
@@ -14,9 +14,7 @@
           "Microsoft.NET.Test.Sdk": "15.8.0",
           "Moq": "4.13.1",
           "NUnit3TestAdapter": "3.10.0",
-          "NUnit": "3.10.1",
-          "Microsoft.IdentityModel.Tokens": "5.2.0.0",
-          "System.IdentityModel.Tokens.Jwt": "5.2.0.0"
+          "NUnit": "3.10.1"
         },
         "runtime": {
           "LandmarkRemarkTest.dll": {}
@@ -564,16 +562,6 @@
         "dependencies": {
           "System.Security.AccessControl": "4.5.0",
           "System.Security.Principal.Windows": "4.5.0"
-        },
-        "runtimeTargets": {
-          "runtime/unix/lib/_._": {
-            "rid": "unix",
-            "assetType": "runtime"
-          },
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
         }
       },
       "Moq/4.13.1": {
@@ -839,20 +827,6 @@
           "System.Threading.Thread": "4.3.0",
           "System.Threading.ThreadPool": "4.3.0",
           "runtime.native.System": "4.3.0"
-        },
-        "runtimeTargets": {
-          "runtime/linux/lib/_._": {
-            "rid": "linux",
-            "assetType": "runtime"
-          },
-          "runtime/osx/lib/_._": {
-            "rid": "osx",
-            "assetType": "runtime"
-          },
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
         }
       },
       "System.Diagnostics.TextWriterTraceListener/4.0.0": {
@@ -880,16 +854,6 @@
           "System.Runtime.Extensions": "4.3.0",
           "System.Threading": "4.3.0",
           "runtime.native.System": "4.3.0"
-        },
-        "runtimeTargets": {
-          "runtime/unix/lib/_._": {
-            "rid": "unix",
-            "assetType": "runtime"
-          },
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
         }
       },
       "System.Diagnostics.Tracing/4.1.0": {
@@ -927,16 +891,6 @@
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
           "System.Runtime.InteropServices": "4.3.0"
-        },
-        "runtimeTargets": {
-          "runtime/unix/lib/_._": {
-            "rid": "unix",
-            "assetType": "runtime"
-          },
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
         }
       },
       "System.Interactive.Async/3.1.1": {
@@ -1159,16 +1113,6 @@
           "System.Runtime.InteropServices": "4.3.0",
           "System.Threading": "4.3.0",
           "runtime.native.System": "4.3.0"
-        },
-        "runtimeTargets": {
-          "runtime/unix/lib/_._": {
-            "rid": "unix",
-            "assetType": "runtime"
-          },
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
         }
       },
       "System.Runtime.Loader/4.0.0": {
@@ -1194,26 +1138,9 @@
       "System.Security.AccessControl/4.5.0": {
         "dependencies": {
           "System.Security.Principal.Windows": "4.5.0"
-        },
-        "runtimeTargets": {
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
         }
       },
-      "System.Security.Principal.Windows/4.5.0": {
-        "runtimeTargets": {
-          "runtime/unix/lib/_._": {
-            "rid": "unix",
-            "assetType": "runtime"
-          },
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
-        }
-      },
+      "System.Security.Principal.Windows/4.5.0": {},
       "System.Text.Encoding/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -1396,22 +1323,6 @@
         },
         "runtime": {
           "LandmarkRemarkService.dll": {}
-        }
-      },
-      "Microsoft.IdentityModel.Tokens/5.2.0.0": {
-        "runtime": {
-          "Microsoft.IdentityModel.Tokens.dll": {
-            "assemblyVersion": "5.2.0.0",
-            "fileVersion": "5.2.0.50129"
-          }
-        }
-      },
-      "System.IdentityModel.Tokens.Jwt/5.2.0.0": {
-        "runtime": {
-          "System.IdentityModel.Tokens.Jwt.dll": {
-            "assemblyVersion": "5.2.0.0",
-            "fileVersion": "5.2.0.50129"
-          }
         }
       }
     }
@@ -2162,16 +2073,6 @@
     },
     "LandmarkRemarkService/1.0.0": {
       "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.IdentityModel.Tokens/5.2.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.IdentityModel.Tokens.Jwt/5.2.0.0": {
-      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

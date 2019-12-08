@@ -12,3 +12,16 @@ C:\Code\LandmarkRemark\LandmarkRemarkData\obj\Debug\netcoreapp2.1\LandmarkRemark
 C:\Code\LandmarkRemark\LandmarkRemarkData\obj\Debug\netcoreapp2.1\LandmarkRemarkData.csproj.CopyComplete
 C:\Code\LandmarkRemark\LandmarkRemarkData\obj\Debug\netcoreapp2.1\LandmarkRemarkData.dll
 C:\Code\LandmarkRemark\LandmarkRemarkData\obj\Debug\netcoreapp2.1\LandmarkRemarkData.pdb
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkData\bin\Debug\netcoreapp2.1\LandmarkRemarkData.deps.json
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkData\bin\Debug\netcoreapp2.1\LandmarkRemarkData.runtimeconfig.json
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkData\bin\Debug\netcoreapp2.1\LandmarkRemarkData.runtimeconfig.dev.json
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkData\bin\Debug\netcoreapp2.1\LandmarkRemarkData.dll
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkData\bin\Debug\netcoreapp2.1\LandmarkRemarkData.pdb
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkData\bin\Debug\netcoreapp2.1\LandmarkRemarkModel.dll
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkData\bin\Debug\netcoreapp2.1\LandmarkRemarkModel.pdb
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkData\obj\Debug\netcoreapp2.1\LandmarkRemarkData.csprojAssemblyReference.cache
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkData\obj\Debug\netcoreapp2.1\LandmarkRemarkData.AssemblyInfoInputs.cache
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkData\obj\Debug\netcoreapp2.1\LandmarkRemarkData.AssemblyInfo.cs
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkData\obj\Debug\netcoreapp2.1\LandmarkRemarkData.csproj.CopyComplete
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkData\obj\Debug\netcoreapp2.1\LandmarkRemarkData.dll
+D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkData\obj\Debug\netcoreapp2.1\LandmarkRemarkData.pdb
