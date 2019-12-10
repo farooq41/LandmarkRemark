@@ -23,7 +23,7 @@ namespace LandmarkRemark.Controllers
             _remarkService = remarkService;
         }
 
-        // GET: api/User
+        // GET: api/remark/allRemarks
         [HttpGet("allRemarks")]
         public async Task<IActionResult> GetAll()
         {
@@ -31,7 +31,7 @@ namespace LandmarkRemark.Controllers
             return Ok(result);
         }
 
-        // GET: api/User/5
+        // GET: api/remark/remark
         [HttpPost("remark")]
         public async Task<IActionResult> Remark([FromBody] Remark remark)
         {

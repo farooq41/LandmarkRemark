@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using LandmarkRemarkModel;
 using LandmarkRemarkService;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LandmarkRemark.Controllers
@@ -22,7 +18,7 @@ namespace LandmarkRemark.Controllers
             _userService = userService;
         }
 
-        // GET: api/User/5
+        // Login: api/User/login
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] Login loginInfo)
         {
@@ -33,7 +29,7 @@ namespace LandmarkRemark.Controllers
                 return NotFound("User not found, invalid credentials");
         }
 
-        // POST: api/User
+        // Register: api/User/register
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] User user)
         {
