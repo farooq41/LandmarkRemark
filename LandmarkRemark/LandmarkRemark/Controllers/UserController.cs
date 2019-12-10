@@ -30,7 +30,7 @@ namespace LandmarkRemark.Controllers
             if (user != null)
                 return Ok(user);
             else
-                return NotFound();
+                return NotFound("User not found, invalid credentials");
         }
 
         // POST: api/User

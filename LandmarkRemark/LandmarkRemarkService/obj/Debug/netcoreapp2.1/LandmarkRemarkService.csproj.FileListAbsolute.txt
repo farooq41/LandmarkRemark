@@ -29,3 +29,17 @@ D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\bin\Debug\netcoreapp
 D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\bin\Debug\netcoreapp2.1\LandmarkRemarkData.pdb
 D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\bin\Debug\netcoreapp2.1\LandmarkRemarkModel.pdb
 D:\Code\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\obj\Debug\netcoreapp2.1\LandmarkRemarkService.csproj.CopyComplete
+C:\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\bin\Debug\netcoreapp2.1\LandmarkRemarkService.deps.json
+C:\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\bin\Debug\netcoreapp2.1\LandmarkRemarkService.dll
+C:\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\bin\Debug\netcoreapp2.1\LandmarkRemarkService.pdb
+C:\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\bin\Debug\netcoreapp2.1\LandmarkRemarkData.dll
+C:\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\bin\Debug\netcoreapp2.1\LandmarkRemarkModel.dll
+C:\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\bin\Debug\netcoreapp2.1\LandmarkRemarkData.pdb
+C:\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\bin\Debug\netcoreapp2.1\LandmarkRemarkModel.pdb
+C:\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\obj\Debug\netcoreapp2.1\LandmarkRemarkService.csprojAssemblyReference.cache
+C:\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\obj\Debug\netcoreapp2.1\LandmarkRemarkService.csproj.CoreCompileInputs.cache
+C:\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\obj\Debug\netcoreapp2.1\LandmarkRemarkService.AssemblyInfoInputs.cache
+C:\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\obj\Debug\netcoreapp2.1\LandmarkRemarkService.AssemblyInfo.cs
+C:\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\obj\Debug\netcoreapp2.1\LandmarkRemarkService.csproj.CopyComplete
+C:\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\obj\Debug\netcoreapp2.1\LandmarkRemarkService.dll
+C:\LandmarkRemark\LandmarkRemark\LandmarkRemarkService\obj\Debug\netcoreapp2.1\LandmarkRemarkService.pdb

@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, Inject, ViewChild, ElementRef } from '@angular/core';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
 import { ActivatedRoute, Router } from '@angular/router';
 import { UserService } from '../services/user-service.service';
@@ -10,11 +10,14 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+
   user: User={ id:0,
     username: "",
     password: "",
     email: "", token:""};
   register: boolean = false;
+  errorResponse: string;
+  submitted:boolean=false;
   constructor(private route: ActivatedRoute, private http: HttpClient, @Inject('BASE_URL') private baseUrl: string, private router: Router, private userService: UserService) { 
 
   }
@@ -36,6 +39,7 @@ export class LoginComponent implements OnInit {
 if(!g.valid){
   return;
 }
+    this.submitted = true;
     const httpOptions = {
 
       headers: new HttpHeaders({
@@ -51,13 +55,15 @@ if(!g.valid){
 
         this.http.post<User>(this.baseUrl + 'api/User/register', this.user, httpOptions).subscribe(result => {
 
-          console.log(result);
+          this.submitted = false;
           localStorage.setItem('user', JSON.stringify(result));
           this.userService.setUser(result);
           this.router.navigate(['/landmarkremark']);
 
 
-      }, error => console.error(error));    
+      }, error =>  {this.submitted = false;
+      console.log(error);
+      this.errorResponse = error.error;});    
 
       this.register = false;
       this.user.username = "";
@@ -67,11 +73,15 @@ if(!g.valid){
       this.http.post<User>(this.baseUrl + 'api/User/login', this.user, httpOptions).subscribe(result => {
 
         console.log(result);
+        this.submitted = false;
         localStorage.setItem('user', JSON.stringify(result));
         this.userService.setUser(result);
         this.router.navigate(['/landmarkremark']);
 
-    }, error => console.error(error));    
+    }, error => {console.error(error)
+      this.submitted = false;
+      this.errorResponse = error.error;
+    });    
     }
   }
 }

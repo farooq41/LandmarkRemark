@@ -1,5 +1,5 @@
 <agm-map [latitude]="lat" [longitude]="lng" gestureHandling="greedy" [zoom]="14">
-  <agm-marker [latitude]="homeLat" [longitude]="homeLng"
+  <agm-marker [latitude]="lat" [longitude]="lng"
     [iconUrl]="{'url': 'assets/currentloc.jpg', 'scaledSize': {'height': 40, 'width': 40}}"  [zIndex]="currentMarkerExists ? 10 : 1000">
     <agm-info-window *ngIf="!currentMarkerExists">
         <form #g="ngForm">

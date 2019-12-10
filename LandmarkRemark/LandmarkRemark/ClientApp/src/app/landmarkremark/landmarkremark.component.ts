@@ -15,13 +15,11 @@ export class LandmarkremarkComponent implements OnInit {
 
   lat: number; // current map location in view
   lng: number; // current map location in view
-  homeLat: number; // current user location marker coords
-  homeLng: number; // current user location marker coords
   zoom: 14;
   map: any;
   user: User = JSON.parse(localStorage.getItem('user'));
   markers: Marker[];
-  currentMarker: Marker;
+  currentMarker ={latitude:0, longitude:0, note:"", user:this.user, id:0, createdDate:null, userId:0, open:false};
   currentMarkerExists: boolean;
   constructor(private route: ActivatedRoute, private http: HttpClient, @Inject('BASE_URL') private baseUrl: string, private router: Router) { }
 
@@ -37,12 +35,8 @@ export class LandmarkremarkComponent implements OnInit {
     };
     if (navigator.geolocation) {
       navigator.geolocation.watchPosition(location => {
-        this.lat = parseFloat(location.coords.latitude.toFixed(4));
-        this.lng = parseFloat(location.coords.longitude.toFixed(4));
-
-        this.homeLat = this.lat;
-        this.homeLng = this.lng;
-
+        this.lat = parseFloat(location.coords.latitude.toFixed(4)) * 0.869;
+        this.lng = parseFloat(location.coords.longitude.toFixed(4)) * 0.869;
         this.currentMarker ={latitude:this.lat, longitude:this.lng, note:"", user:this.user, id:0, createdDate:null, userId:0, open:false};
       },error=>{},options);
     } else {
@@ -89,9 +83,11 @@ export class LandmarkremarkComponent implements OnInit {
     this.currentMarker.createdDate = new Date();
     this.http.post<Marker>(this.baseUrl + 'api/remark/remark', this.currentMarker, httpOptions).subscribe(result => {
 
-      console.log(result);
-      this.currentMarker.note="";
-      this.router.navigate(['/landmarkremark']);
+      this.markers.push(this.currentMarker);
+      this.markers[this.markers.length-1]['current'] = true;
+      this.currentMarker.open = false;
+      this.currentMarkerExists = true;
+   
 
   }, error => console.error(error));    
   }

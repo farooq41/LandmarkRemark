@@ -3630,19 +3630,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mohammed.farooq\\.nuget\\packages\\": {}
+    "C:\\Users\\umarf\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Code\\LandmarkRemark\\LandmarkRemark\\LandmarkRemarkData\\LandmarkRemarkData.csproj",
+      "projectUniqueName": "C:\\LandmarkRemark\\LandmarkRemark\\LandmarkRemarkData\\LandmarkRemarkData.csproj",
       "projectName": "LandmarkRemarkData",
-      "projectPath": "D:\\Code\\LandmarkRemark\\LandmarkRemark\\LandmarkRemarkData\\LandmarkRemarkData.csproj",
-      "packagesPath": "C:\\Users\\mohammed.farooq\\.nuget\\packages\\",
-      "outputPath": "D:\\Code\\LandmarkRemark\\LandmarkRemark\\LandmarkRemarkData\\obj\\",
+      "projectPath": "C:\\LandmarkRemark\\LandmarkRemark\\LandmarkRemarkData\\LandmarkRemarkData.csproj",
+      "packagesPath": "C:\\Users\\umarf\\.nuget\\packages\\",
+      "outputPath": "C:\\LandmarkRemark\\LandmarkRemark\\LandmarkRemarkData\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\mohammed.farooq\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\umarf\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3655,8 +3659,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\Code\\LandmarkRemark\\LandmarkRemark\\LandmarkRemarkModel\\LandmarkRemarkModel.csproj": {
-              "projectPath": "D:\\Code\\LandmarkRemark\\LandmarkRemark\\LandmarkRemarkModel\\LandmarkRemarkModel.csproj"
+            "C:\\LandmarkRemark\\LandmarkRemark\\LandmarkRemarkModel\\LandmarkRemarkModel.csproj": {
+              "projectPath": "C:\\LandmarkRemark\\LandmarkRemark\\LandmarkRemarkModel\\LandmarkRemarkModel.csproj"
             }
           }
         }
@@ -3688,16 +3692,10 @@
           }
         },
         "imports": [
-          "net461",
-          "net462",
-          "net47",
-          "net471",
-          "net472",
-          "net48"
+          "net461"
         ],
         "assetTargetFallback": true,
-        "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "warn": true
       }
     }
   }
