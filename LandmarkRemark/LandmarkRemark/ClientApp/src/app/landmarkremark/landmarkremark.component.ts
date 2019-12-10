@@ -35,8 +35,8 @@ export class LandmarkremarkComponent implements OnInit {
     };
     if (navigator.geolocation) {
       navigator.geolocation.watchPosition(location => {
-        this.lat = parseFloat(location.coords.latitude.toFixed(4)) * 0.869;
-        this.lng = parseFloat(location.coords.longitude.toFixed(4)) * 0.869;
+        this.lat = parseFloat(location.coords.latitude.toFixed(4));
+        this.lng = parseFloat(location.coords.longitude.toFixed(4));
         this.currentMarker ={latitude:this.lat, longitude:this.lng, note:"", user:this.user, id:0, createdDate:null, userId:0, open:false};
       },error=>{},options);
     } else {

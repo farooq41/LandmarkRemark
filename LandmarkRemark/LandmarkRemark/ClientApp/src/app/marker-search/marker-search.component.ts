@@ -10,6 +10,7 @@ import { User } from '../login/login.component';
 export class MarkerSearchComponent implements OnInit {
   @Input() markers: Marker[];
   @Output() selectedMarker = new EventEmitter<Marker>();
+  searchText: string;
   user: User = JSON.parse(localStorage.getItem('user'));
   constructor() { }
 
