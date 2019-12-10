@@ -8,8 +8,6 @@ import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { AuthGuard } from './_guards/AuthGuard';
 import { HomeComponent } from './home/home.component';
-import { CounterComponent } from './counter/counter.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { LoginComponent } from './login/login.component';
 import { LandmarkremarkComponent } from './landmarkremark/landmarkremark.component';
 import { AgmCoreModule } from '@agm/core';
@@ -25,8 +23,6 @@ import { UserService } from './services/user-service.service';
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    CounterComponent,
-    FetchDataComponent,
     LoginComponent,
     LandmarkremarkComponent,
     MarkerSearchComponent,
@@ -41,8 +37,6 @@ import { UserService } from './services/user-service.service';
     CommonModule, 
     RouterModule.forRoot([
       { path: '', component: LoginComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
       { path: 'landmarkremark', component: LandmarkremarkComponent, canActivate: [AuthGuard] },
       // otherwise redirect to home
       { path: '**', redirectTo: '' }
