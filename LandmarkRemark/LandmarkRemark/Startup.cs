@@ -60,9 +60,11 @@ namespace LandmarkRemark
                 configuration.RootPath = "ClientApp/dist";
             });
 
+            //register Db context
             services.AddDbContext<Context>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DbConnection")));
 
+            //add services to DI container
             services.AddScoped<IRemarkService, RemarkService>();
             services.AddScoped<IUserService, UserService>();
         }
@@ -79,7 +81,9 @@ namespace LandmarkRemark
                 app.UseExceptionHandler("/Error");
                 app.UseHsts();
             }
+            //enforcing Jwt token authentication.
             app.UseAuthentication();
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseSpaStaticFiles();

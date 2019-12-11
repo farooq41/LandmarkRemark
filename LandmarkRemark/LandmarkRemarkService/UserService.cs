@@ -24,11 +24,12 @@ namespace LandmarkRemarkService
             _appSettings = appSettings.Value;
         }
 
+        //creates user based on registered info.
         public async Task<string> CreateUser(User user)
         {
             if (_context.Users.Any(u => u.Username == user.Username))
             {
-                return _duplicateUserName;
+                return _duplicateUserName; // Username must be unique.
             }
 
             var result = _context.Users.Add(user);
@@ -36,6 +37,7 @@ namespace LandmarkRemarkService
             return string.Empty;
         }
 
+        //checks if user exists and creates a JWT token for valid user
         public async Task<User> GetUser(string userName, string password)
         {
             var user = await _context.Users.SingleOrDefaultAsync(u => u.Username == userName && u.Password == password);
@@ -43,6 +45,7 @@ namespace LandmarkRemarkService
             if (user == null)
                 return null;
 
+            //generate JWT token that is valid for 60 minutes. This token has to be sent in every request.
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
             var tokenDescriptor = new SecurityTokenDescriptor

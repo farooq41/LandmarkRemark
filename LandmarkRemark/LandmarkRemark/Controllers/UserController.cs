@@ -34,11 +34,13 @@ namespace LandmarkRemark.Controllers
         public async Task<IActionResult> Register([FromBody] User user)
         {
             var result = await _userService.CreateUser(user);
+            //if the registration is succesful send the user directly into landing page of the app.
             if (string.IsNullOrEmpty(result))
             {
                 var userResult = await _userService.GetUser(user.Username, user.Password);
                 return CreatedAtRoute("login", new Login() { UserName = user.Username, Password = user.Password }, userResult);
             }
+
             return BadRequest(result);
         }
     }

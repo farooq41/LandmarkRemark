@@ -16,6 +16,7 @@ namespace LandmarkRemarkService
             _context = context;
         }
 
+        //Gets all landmarks
         public async Task<IEnumerable<Remark>> GetAllRemarks()
         {
             return await _context.Remarks.Select(r => 
@@ -23,6 +24,7 @@ namespace LandmarkRemarkService
             .ToListAsync();
         }
 
+        //Adds the note
         public async Task<int> RemarkLandmark(Remark remark)
         {
             try
