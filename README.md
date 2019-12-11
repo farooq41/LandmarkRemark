@@ -40,7 +40,8 @@ Go to this location LandmarkRemark/LandmarkRemark/ClientApp and run
 2)	Ng serve
 
 **Locally running the app:**
-1)	Open Solution file in VS & Set LandmarkRemark Project app as start up and run the solution.
+1)	Open Solution file in VS Right click and Restore Nuget Packages & Build the soultion
+2)	Set LandmarkRemark Project app as start up and run the solution.
 
 **Using the app:**
 	User can start with registering themselves with username, password & email(fake is fine). If already registered then proceed to the app by logging in. On the landing page User will be asked to allow their location to be identified. User can see their notes against locations that they have added previously and can see others who have added notes. User can add a note at their current location. If there is a note user already has added at their current location then that will be shown. User can also search for a note or by username and the items are filtered below. User can click on an item and the note will be highlighted on the map, so that user can locate the note geographically on the map. User can logout of the application.
