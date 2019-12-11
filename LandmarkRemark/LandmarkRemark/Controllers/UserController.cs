@@ -19,7 +19,7 @@ namespace LandmarkRemark.Controllers
         }
 
         // Login: api/User/login
-        [HttpPost("login")]
+        [HttpPost("login", Name ="login")]
         public async Task<IActionResult> Login([FromBody] Login loginInfo)
         {
             var user = await _userService.GetUser(loginInfo.UserName, loginInfo.Password);
@@ -36,7 +36,8 @@ namespace LandmarkRemark.Controllers
             var result = await _userService.CreateUser(user);
             if (string.IsNullOrEmpty(result))
             {
-                return CreatedAtRoute("login", new Login() { UserName = user.Username, Password = user.Password });
+                var userResult = await _userService.GetUser(user.Username, user.Password);
+                return CreatedAtRoute("login", new Login() { UserName = user.Username, Password = user.Password }, userResult);
             }
             return BadRequest(result);
         }

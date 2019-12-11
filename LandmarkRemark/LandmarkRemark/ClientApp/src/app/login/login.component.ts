@@ -56,18 +56,19 @@ if(!g.valid){
         this.http.post<User>(this.baseUrl + 'api/User/register', this.user, httpOptions).subscribe(result => {
 
           this.submitted = false;
+          
           localStorage.setItem('user', JSON.stringify(result));
           this.userService.setUser(result);
           this.router.navigate(['/landmarkremark']);
 
 
       }, error =>  {this.submitted = false;
+        this.user.username = "";
+          this.user.password = "";
       console.log(error);
       this.errorResponse = error.error;});    
 
-      this.register = false;
-      this.user.username = "";
-      this.user.password = "";
+     
     }
     else{
       this.http.post<User>(this.baseUrl + 'api/User/login', this.user, httpOptions).subscribe(result => {
