@@ -27,17 +27,19 @@ There are two ways to test this one.
 
 **Local Setup:**
 This project was generated with Angular CLI version 1.7.0.
+
 **Prerequisites:**
 1)	.NET Core 2.1
 2)	Node JS 
 3)	VS 2017 or higher
-git clone https://github.com/farooq41/LandmarkRemark.git 
-Running Angular:
+4)   git clone https://github.com/farooq41/LandmarkRemark.git 
+
+**Running Angular:**
 Go to this location LandmarkRemark/LandmarkRemark/ClientApp and run
 1)	Npm install
 2)	Ng serve
 
-Locally running the app:
+**Locally running the app:**
 1)	Open Solution file in VS & Set LandmarkRemark Project app as start up and run the solution.
 
 **Using the app:**
