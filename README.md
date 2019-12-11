@@ -23,7 +23,8 @@ Application structure & Tech Stack
 Running the app:
 There are two ways to test this one.
 1)	Locally cloning the app and setup.
-2)	Accessing the deployed site on Azure app service here
+2)	Accessing the deployed site on Azure app service [here](https://landmarkremark20191209123439.azurewebsites.net)
+
 Local Setup:
 This project was generated with Angular CLI version 1.7.0.
 Prerequisites:
