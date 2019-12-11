@@ -17,6 +17,7 @@ export class MarkerSearchComponent implements OnInit {
   ngOnInit() {
   }
 
+  //selected marker is sent back to the parent component to be highlighted on the map
   selectMarker(marker: Marker) {
 
     //emit selecetd marker

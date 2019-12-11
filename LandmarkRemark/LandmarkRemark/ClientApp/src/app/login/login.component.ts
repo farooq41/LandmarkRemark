@@ -27,14 +27,17 @@ export class LoginComponent implements OnInit {
     this.userService.setUser(null);
   }
 
+  //user registers
   onRegister(){
     this.register = true;
   }
 
+  //go back to login
   onCancel(){
     this.register = false;
   }
 
+  //form submit for login/register
   onSubmit(g: NgForm){
 if(!g.valid){
   return;
@@ -49,6 +52,7 @@ if(!g.valid){
       })
     };
 
+    //register the user
     if(this.register){
 
     
@@ -56,7 +60,7 @@ if(!g.valid){
         this.http.post<User>(this.baseUrl + 'api/User/register', this.user, httpOptions).subscribe(result => {
 
           this.submitted = false;
-          
+          //add the user details to local storage
           localStorage.setItem('user', JSON.stringify(result));
           this.userService.setUser(result);
           this.router.navigate(['/landmarkremark']);
@@ -66,16 +70,17 @@ if(!g.valid){
         this.user.username = "";
           this.user.password = "";
       console.log(error);
-      this.errorResponse = error.error;});    
+      this.errorResponse = error.error;});     //display the error for the user
 
      
     }
+    //User log in
     else{
       this.http.post<User>(this.baseUrl + 'api/User/login', this.user, httpOptions).subscribe(result => {
 
         console.log(result);
         this.submitted = false;
-        localStorage.setItem('user', JSON.stringify(result));
+        localStorage.setItem('user', JSON.stringify(result)); // add the user to local storage
         this.userService.setUser(result);
         this.router.navigate(['/landmarkremark']);
 

@@ -6,6 +6,7 @@ export class AuthGuard implements CanActivate {
 
     constructor(private router: Router) { }
 
+    //checks if the user is being logged in and accessing the correct route.
     canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
         if (localStorage.getItem('user')) {
             // logged in so return true

@@ -29,6 +29,8 @@ export class LandmarkremarkComponent implements OnInit {
     this.getMarkers();
     
   }
+
+  //gets the current location of the user.
   getCurrentLocation() {
     if (navigator.geolocation) {
       navigator.geolocation.watchPosition(location => {
@@ -40,6 +42,8 @@ export class LandmarkremarkComponent implements OnInit {
     } else {
     }
   }
+
+  //gets all the markers users of the app have saved.
   getMarkers(){
     const httpOptions = {
 
@@ -66,9 +70,12 @@ export class LandmarkremarkComponent implements OnInit {
       this.currentMarkerExists = true;
       this.markers[idx]['current'] = true;
     } else {
+      //otherwise there is no marker at the current location for the logged in user.
       this.currentMarkerExists = false;
     }
   }
+
+  //adds a note on the map
   addNote(){
     const httpOptions = {
 
@@ -80,6 +87,7 @@ export class LandmarkremarkComponent implements OnInit {
     };
     this.currentMarker.createdDate = new Date();
     this.currentMarker.note = this.noteVal;
+    //api call
     this.http.post<Marker>(this.baseUrl + 'api/remark/remark', this.currentMarker, httpOptions).subscribe(result => {
 
       this.markers.push(this.currentMarker);
@@ -91,15 +99,18 @@ export class LandmarkremarkComponent implements OnInit {
   }, error => console.error(error));    
   }
 
+  //load the map object so that the co-ordinates of the clicked item be mapped.
   loadMap(map:any){
     this.map=map;
   }
 
+  //open the marker the user has clicked on the map.
   openMarker(marker: Marker){
     this.markers.forEach(m => m.open = false);
     marker.open = true;
   }
 
+  //map the co-ordinates and highlight the marker
   onChoseSearchedMarker(marker: Marker) {
     // get target position
     const position = new google.maps.LatLng(marker.latitude, marker.longitude);
