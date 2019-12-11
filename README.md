@@ -3,7 +3,7 @@
 ## **.NET CORE/Angular App to add notes against a location on the map.**
 
 ## **Overview**
-App Features
+**App Features**
 1.	User can register to be able to access the app
 2.	User can login with their Username & Password
 3.	On the landing page User can add notes on their current location by clicking/touching on the icon
@@ -12,7 +12,7 @@ App Features
 6.	From the filtered list, user can click/touch on an item on the list and the note is highlighted on the map.
 7.	User can logout
 
-Application structure & Tech Stack
+**Application structure & Tech Stack**
 1.	LandmarkRemark - It is an Angular 5 .NET Core 2.1 app
 2.	EF Core is used as ORM
 3.	SQL DB on Azure
@@ -20,7 +20,7 @@ Application structure & Tech Stack
 5.	LandmarkRemarkService – It is a project for the business logic of the app
 6.	LandmarkRemarkData – It is a project that has EF context
 
-Running the app:
+**Running the app:**
 There are two ways to test this one.
 1)	Locally cloning the app and setup.
 2)	Accessing the deployed site on Azure app service [here](https://landmarkremark20191209123439.azurewebsites.net)
