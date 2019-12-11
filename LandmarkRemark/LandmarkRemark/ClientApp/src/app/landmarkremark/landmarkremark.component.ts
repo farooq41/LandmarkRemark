@@ -19,8 +19,9 @@ export class LandmarkremarkComponent implements OnInit {
   map: any;
   user: User = JSON.parse(localStorage.getItem('user'));
   markers: Marker[];
-  currentMarker ={latitude:0, longitude:0, note:"", user:this.user, id:0, createdDate:null, userId:0, open:false};
+  currentMarker:Marker;
   currentMarkerExists: boolean;
+  noteVal:string;
   constructor(private route: ActivatedRoute, private http: HttpClient, @Inject('BASE_URL') private baseUrl: string, private router: Router) { }
 
   ngOnInit() {
@@ -29,16 +30,13 @@ export class LandmarkremarkComponent implements OnInit {
     
   }
   getCurrentLocation() {
-    var options = {
-      enableHighAccuracy: true,
-      maximumAge: 0
-    };
     if (navigator.geolocation) {
       navigator.geolocation.watchPosition(location => {
         this.lat = parseFloat(location.coords.latitude.toFixed(4));
         this.lng = parseFloat(location.coords.longitude.toFixed(4));
         this.currentMarker ={latitude:this.lat, longitude:this.lng, note:"", user:this.user, id:0, createdDate:null, userId:0, open:false};
-      },error=>{},options);
+        
+      },error=>{});
     } else {
     }
   }
@@ -81,6 +79,7 @@ export class LandmarkremarkComponent implements OnInit {
       })
     };
     this.currentMarker.createdDate = new Date();
+    this.currentMarker.note = this.noteVal;
     this.http.post<Marker>(this.baseUrl + 'api/remark/remark', this.currentMarker, httpOptions).subscribe(result => {
 
       this.markers.push(this.currentMarker);
