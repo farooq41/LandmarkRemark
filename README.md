@@ -1,9 +1,8 @@
 # LandmarkRemark
-##**Add notes on a landmark you are at on the map.**
 
-##**.NET CORE/Angular App to add notes against a location on the map.**
+## **.NET CORE/Angular App to add notes against a location on the map.**
 
-##**Overview **
+## **Overview**
 App Features
 1.	User can register to be able to access the app
 2.	User can login with their Username & Password
